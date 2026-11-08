@@ -1,0 +1,14 @@
+.aw-hero>div:not(.aw-hero-bg){position:relative;z-index:1}
+.aw-hero-bg{position:absolute;inset:0;z-index:0;background:#101820 url(../video/hero-poster.jpg) 70% center/cover no-repeat}
+.aw-hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center;opacity:0;transition:opacity 1.2s ease}
+.aw-hero-video.is-on{opacity:1}
+.aw-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,24,32,.92) 0%,rgba(16,24,32,.82) 45%,rgba(20,40,63,.35) 72%,rgba(20,40,63,.1) 100%),linear-gradient(180deg,rgba(16,24,32,0) 55%,rgba(16,24,32,.9) 100%)}
+.aw-hero-fig{display:none!important}
+.aw-hero .aw-hero-in{min-height:min(78svh,760px)}
+@media (max-width:760px){
+ .aw-hero-bg{background-image:url(../video/hero-poster-960.jpg);background-position:72% 20%}
+ .aw-hero-video{object-position:72% center}
+ .aw-hero-shade{background:linear-gradient(180deg,rgba(16,24,32,.55) 0%,rgba(16,24,32,.82) 45%,rgba(16,24,32,.95) 100%)}
+ .aw-hero .aw-hero-in{min-height:auto}
+}
+@media (prefers-reduced-motion:reduce){.aw-hero-video{display:none}}

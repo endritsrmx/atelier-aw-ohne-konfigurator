@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="de-CH" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atelier AW – Personalisierte Uhren für besondere Anlässe</title>
+<meta name="description" content="Personalisierte Uhren für Vereine, Unternehmen und private Meilensteine. Modelle ab CHF 395.–, sofort verfügbare Uhren und persönliche Anfrage.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1f3a5f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Atelier AW – Personalisierte Uhren für besondere Anlässe">
+<meta property="og:description" content="Personalisierte Uhren für Vereine, Unternehmen und private Meilensteine. Modelle ab CHF 395.–, sofort verfügbare Uhren und persönliche Anfrage.">
+<meta property="og:image" content="assets/img/modelle/classico-eisblau.webp">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<script>
+document.documentElement.className = 'js';
+if (location.protocol !== 'file:') {
+  ['source-sans-3-latin-400-normal', 'source-sans-3-latin-600-normal', 'cormorant-garamond-latin-500-normal', 'cormorant-garamond-latin-500-italic'].forEach(function (f) {
+    var l = document.createElement('link'); l.rel = 'preload'; l.as = 'font'; l.type = 'font/woff2';
+    l.crossOrigin = 'anonymous'; l.href = 'assets/fonts/' + f + '.woff2'; document.head.appendChild(l);
+  });
+}
+</script>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>
+/* Intro-Modus vor dem ersten Bild festlegen: full = ganzes Intro (einmal pro Sitzung), short = kurze Einblendung bei
+   «Bewegung reduzieren», none = kein Intro. Fallback: nach 12 s gilt das Intro in jedem Fall als beendet. */
+(function () {
+  var r = document.documentElement, m = 'full';
+  try { if (sessionStorage.getItem('aw-intro-seen')) m = 'none'; } catch (e) {}
+  if (m === 'full' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) m = 'short';
+  r.setAttribute('data-intro', m);
+  setTimeout(function () { var v = r.getAttribute('data-intro'); if (v === 'full' || v === 'short') r.setAttribute('data-intro', 'done'); }, 12000);
+})();
+</script>
+<link rel="stylesheet" href="assets/css/sections.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/hero-video.css">
+</head>
+<body>
+<div id="aw-intro"><div class="intro-bg" aria-hidden="true"></div></div>
+<a href="#inhalt" style="position:fixed;left:16px;top:-80px;z-index:100;background:#f3f0e8;color:#14283f;padding:12px 16px;font-weight:600;transition:top 160ms" data-fc="0">Zum Inhalt</a>
+
+<header class="hd" data-dark="">
+  <div class="hd-in">
+    <a class="brand" href="index.html" aria-label="Atelier AW – zur Startseite">
+      <img src="assets/logo/atelier-w-logo-white.svg" alt="Atelier AW" width="80" height="54">
+    </a>
+    <nav class="nav-wide hd-nav" aria-label="Hauptnavigation">
+      <ul class="hd-links"><li><a href="modelle.html">Modelle<span class="nav-line" aria-hidden="true"></span></a></li><li><a href="sofort-verfuegbar.html">Sofort verfügbar<span class="nav-line" aria-hidden="true"></span></a></li><li><a href="projekte.html">Projekte<span class="nav-line" aria-hidden="true"></span></a></li><li><a href="zubehoer.html">Zubehör<span class="nav-line" aria-hidden="true"></span></a></li><li><a href="ablauf.html">Ablauf<span class="nav-line" aria-hidden="true"></span></a></li></ul>
+      <a class="hd-cta" href="kontakt.html"><span>Uhr anfragen</span><svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></a>
+    </nav>
+    <button class="nav-narrow hd-menu" type="button" id="menu-btn" aria-expanded="false" aria-controls="aw-menu">
+      <span id="menu-label">Menü</span>
+      <svg width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path id="menu-icon" d="M0 2h22M0 7h22M0 12h22"></path></svg>
+    </button>
+  </div>
+  <span class="hd-edge" aria-hidden="true"></span>
+  <div id="aw-menu" hidden style="position:fixed;top:var(--hd);left:0;right:0;bottom:0;background:#14283f;overflow-y:auto;overscroll-behavior:contain;padding:32px clamp(20px,4.5vw,64px) calc(32px + env(safe-area-inset-bottom))">
+    <nav aria-label="Mobile Navigation">
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column">
+          <li style="border-bottom:1px solid rgba(197,212,228,0.18)"><a href="index.html" style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;color:#f3f0e8;text-decoration:none;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-size:30px;font-weight:500">Start<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></a></li><li style="border-bottom:1px solid rgba(197,212,228,0.18)"><a href="modelle.html" style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;color:#f3f0e8;text-decoration:none;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-size:30px;font-weight:500">Modelle<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></a></li><li style="border-bottom:1px solid rgba(197,212,228,0.18)"><a href="sofort-verfuegbar.html" style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;color:#f3f0e8;text-decoration:none;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-size:30px;font-weight:500">Sofort verfügbar<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></a></li><li style="border-bottom:1px solid rgba(197,212,228,0.18)"><a href="projekte.html" style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;color:#f3f0e8;text-decoration:none;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-size:30px;font-weight:500">Projekte<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></a></li><li style="border-bottom:1px solid rgba(197,212,228,0.18)"><a href="zubehoer.html" style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;color:#f3f0e8;text-decoration:none;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-size:30px;font-weight:500">Zubehör<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></a></li><li style="border-bottom:1px solid rgba(197,212,228,0.18)"><a href="ablauf.html" style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;color:#f3f0e8;text-decoration:none;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-size:30px;font-weight:500">Ablauf<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></a></li><li style="border-bottom:1px solid rgba(197,212,228,0.18)"><a href="kontakt.html" style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;color:#f3f0e8;text-decoration:none;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-size:30px;font-weight:500">Kontakt<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></a></li>
+        </ul>
+      <a href="kontakt.html" style="margin-top:32px;display:flex;justify-content:center;align-items:center;min-height:52px;background:#f3f0e8;color:#14283f;text-decoration:none;font-weight:600;font-size:16px;border-radius:2px">Uhr anfragen</a>
+    </nav>
+  </div>
+</header>
+
+<main id="aw-main">
+<span id="top" style="display:block"></span>
+<section id="inhalt" tabindex="-1" data-dark="" aria-labelledby="hero-h" class="aw-hero" style="position:relative;overflow:hidden;scroll-margin-top:var(--hd);background:linear-gradient(180deg,#101820,#14283f);color:#f3f0e8;outline:none">
+  <div class="aw-hero-bg" aria-hidden="true">
+    <video class="aw-hero-video" muted autoplay loop playsinline preload="auto" poster="assets/video/hero-poster.jpg" data-src="assets/video/hero.mp4" data-src-mobile="assets/video/hero-960.mp4"></video>
+    <div class="aw-hero-shade"></div>
+  </div>
+  <div class="aw-hero-in" style="position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:clamp(48px,7vw,112px) clamp(20px,4.5vw,64px) 0;display:flex;flex-wrap:wrap;align-items:center;gap:clamp(40px,5vw,80px)">
+    <div style="flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:28px">
+      <p style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#c5d4e4">Atelier AW, Schweiz</p>
+      <h1 id="hero-h" style="margin:0;font-family:'Cormorant Garamond',Palatino,'Palatino Linotype',Georgia,serif;font-weight:500;font-size:clamp(3rem,7.4vw,7.2rem);line-height:1;letter-spacing:-0.01em;text-wrap:balance">Was euch verbindet.<br><em style="font-style:italic;color:#c5d4e4">Für immer am Handgelenk.</em></h1>
+      <p style="margin:0;max-width:34em;font-size:clamp(18px,1.6vw,21px);line-height:1.5;color:#e6edf3;text-wrap:pretty">Personalisierte Uhren für Vereine, Unternehmen und private Anlässe. Euer Zeichen auf dem Zifferblatt, eure Worte im Gehäuseboden.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;padding-top:8px">
+        <a href="kontakt.html" style="display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 26px;background:#f3f0e8;color:#14283f;text-decoration:none;font-weight:600;font-size:16px;border-radius:2px;transition:background 200ms,gap 200ms" data-hv="0">Uhr anfragen<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></a>
+        <a href="modelle.html" style="display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 26px;border:1px solid rgba(197,212,228,0.55);color:#f3f0e8;text-decoration:none;font-weight:600;font-size:16px;border-radius:2px;transition:border-color 200ms,background 200ms" data-hv="1">Modelle ansehen</a>
+      </div>
+    </div>
+    <figure class="aw-hero-fig" style="flex:1 1 440px;min-width:0;margin:0;display:flex;flex-direction:column;gap:12px">
+      <div class="ph-frame" style="position:relative;aspect-ratio:4/5;max-height:78svh;background:#101820;overflow:hidden">
+        <img src="assets/img/hero-4x5.webp" srcset="assets/img/hero-4x5-720.webp 720w, assets/img/hero-4x5.webp 1440w" sizes="(min-width: 1000px) 46vw, 100vw" alt="Stahlarmbanduhr mit metallblauem Sonnenschliff-Zifferblatt vor dunklem Hintergrund" fetchpriority="high" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+        <span style="position:absolute;top:14px;left:14px;pointer-events:none;padding:5px 9px;background:rgba(16,24,32,0.86);color:#f3f0e8;font-size:12px;font-weight:600;letter-spacing:0.06em">Beispielbild</span>
+      </div>
+      <figcaption style="font-size:13px;line-height:1.5;color:#c5d4e4">Stahlarmbanduhr mit metallblauem Sonnenschliff. Beispielbild, kein Kundenauftrag.</figcaption>
+    </figure>
+  </div>
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,4.5vw,64px) clamp(48px,6vw,80px)">
+    <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));border-top:1px solid rgba(197,212,228,0.24)">
+      <li style="padding:24px 24px 0 0;display:flex;flex-direction:column;gap:6px"><span style="font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-size:28px;font-weight:500">Privat</span><span style="font-size:15px;color:#c5d4e4">Für persönliche Meilensteine</span></li>
+      <li style="padding:24px 24px 0 0;display:flex;flex-direction:column;gap:6px"><span style="font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-size:28px;font-weight:500">Vereine und Firmen</span><span style="font-size:15px;color:#c5d4e4">Ein gemeinsames Zeichen</span></li>
+      <li style="padding:24px 24px 0 0;display:flex;flex-direction:column;gap:6px"><span style="font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-size:28px;font-weight:500">Persönlicher Entwurf</span><span style="font-size:15px;color:#c5d4e4">Von der Idee zur Anfrage</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="bereiche" class="sx" aria-labelledby="ber-h" style="background:#fbfaf6">
+  <div class="sx-in">
+    <div class="sx-head">
+      <div>
+        <p class="sx-eye">Atelier AW entdecken</p>
+        <h2 id="ber-h" class="sx-h">Alles an seinem Platz</h2>
+      </div>
+      <p class="sx-lead">Modelle ansehen, eine fertige Uhr reservieren oder einfach anfragen. Jeder Bereich hat seine eigene Seite.</p>
+    </div>
+    <ul class="tz-grid tz-grid-5">
+      <li class="tz"><a class="tz-a" href="modelle.html">
+        <div class="ph-frame tz-ph"><img src="assets/img/modelle/classico-eisblau.webp" srcset="assets/img/modelle/classico-eisblau-480.webp 480w, assets/img/modelle/classico-eisblau.webp 1200w" sizes="(min-width: 1000px) 30vw, (min-width: 640px) 50vw, 100vw" alt="" loading="lazy" decoding="async"><span class="bb">Beispielbild</span></div>
+        <div class="tz-b"><h3 class="tz-t">Modelle</h3><p class="tz-d">Classico Titanio, W-Sport und personalisierte Uhren. Ab CHF 395.–</p><span class="tz-l">Modelle ansehen<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></span></div>
+      </a></li>
+      <li class="tz"><a class="tz-a" href="sofort-verfuegbar.html">
+        <div class="ph-frame tz-ph"><img src="assets/img/modelle/w-sport-rosegold.webp" srcset="assets/img/modelle/w-sport-rosegold-480.webp 480w, assets/img/modelle/w-sport-rosegold.webp 1200w" sizes="(min-width: 1000px) 30vw, (min-width: 640px) 50vw, 100vw" alt="" loading="lazy" decoding="async"><span class="bb">Beispielbild</span></div>
+        <div class="tz-b"><h3 class="tz-t">Sofort verfügbar</h3><p class="tz-d">Fertige Uhren, die ihr direkt reservieren könnt.</p><span class="tz-l">Uhren ansehen<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></span></div>
+      </a></li>
+      <li class="tz"><a class="tz-a" href="projekte.html">
+        <div class="ph-frame tz-ph"><img src="assets/img/gallery-matterhorn.webp" srcset="assets/img/gallery-matterhorn-720.webp 720w, assets/img/gallery-matterhorn.webp 1200w" sizes="(min-width: 1000px) 30vw, (min-width: 640px) 50vw, 100vw" alt="" loading="lazy" decoding="async"><span class="bb">Beispielbild</span></div>
+        <div class="tz-b"><h3 class="tz-t">Projekte</h3><p class="tz-d">Eine kleine Serie mit Tourbillon, in Planung.</p><span class="tz-l">Mehr erfahren<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></span></div>
+      </a></li>
+      <li class="tz"><a class="tz-a" href="zubehoer.html">
+        <div class="ph-frame tz-ph"><img src="assets/img/packaging-4x5.webp" srcset="assets/img/packaging-4x5-720.webp 720w, assets/img/packaging-4x5.webp 1200w" sizes="(min-width: 1000px) 30vw, (min-width: 640px) 50vw, 100vw" alt="" loading="lazy" decoding="async"><span class="bb">Beispielbild</span></div>
+        <div class="tz-b"><h3 class="tz-t">Zubehör</h3><p class="tz-d">Uhrenboxen und Uhrenbeweger, Preis auf Anfrage.</p><span class="tz-l">Zubehör ansehen<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></span></div>
+      </a></li>
+      <li class="tz"><a class="tz-a" href="ablauf.html">
+        <div class="ph-frame tz-ph"><img src="assets/img/sketch-1x1.webp" srcset="assets/img/sketch-1x1-720.webp 720w, assets/img/sketch-1x1.webp 1200w" sizes="(min-width: 1000px) 30vw, (min-width: 640px) 50vw, 100vw" alt="" loading="lazy" decoding="async"><span class="bb">Beispielbild</span></div>
+        <div class="tz-b"><h3 class="tz-t">Ablauf & Kontakt</h3><p class="tz-d">Von der Idee bis zur Übergabe, mit Antworten auf die häufigsten Fragen.</p><span class="tz-l">Zum Ablauf<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></span></div>
+      </a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="anlaesse" aria-labelledby="anl-h" style="scroll-margin-top:var(--hd);background:#f3f0e8">
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(64px,9vw,136px) clamp(20px,4.5vw,64px)">
+    <div style="display:flex;flex-wrap:wrap;gap:24px 64px;align-items:end;margin-bottom:clamp(40px,5vw,72px)">
+      <div style="flex:1 1 420px;min-width:0">
+        <p style="margin:0 0 16px;font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#28496f">Drei Anlässe</p>
+        <h2 id="anl-h" style="margin:0;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-weight:500;font-size:clamp(2.25rem,4.6vw,4.4rem);line-height:1.06;text-wrap:balance">Für Clubs, Firmen und einzelne Menschen</h2>
+      </div>
+      <p style="flex:1 1 340px;min-width:0;margin:0;font-size:19px;line-height:1.55;color:#5c6570;max-width:30em;text-wrap:pretty">Ein gemeinsames Zeichen. Ein besonderer Tag. Eine persönliche Geschichte. Ihr bringt den Anlass – daraus beginnt der Entwurf.</p>
+    </div>
+    <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:0 clamp(24px,3vw,48px)">
+      <li style="border-top:1px solid #1c1e22;padding:28px 0 40px;display:flex;flex-direction:column;gap:16px">
+        <span style="font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-size:20px;font-style:italic;color:#28496f;font-variant-numeric:tabular-nums">01</span>
+        <h3 style="margin:0;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-weight:500;font-size:clamp(1.65rem,2.5vw,2.5rem);line-height:1.12">Vereine &amp; Clubs</h3>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:#5c6570;text-wrap:pretty">Wappen, Farben, ein Datum. Für die Mannschaft, den Fanclub, die Zunft oder den Verband.</p>
+        <a href="modelle.html#geschichte-verein" style="margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:10px;min-height:44px;color:#1f3a5f;text-decoration:none;font-weight:600;font-size:15px;border-bottom:1px solid rgba(31,58,95,0.4);transition:gap 200ms,border-color 200ms" data-hv="2">Beispiel ansehen<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></a>
+      </li>
+      <li style="border-top:1px solid #1c1e22;padding:28px 0 40px;display:flex;flex-direction:column;gap:16px">
+        <span style="font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-size:20px;font-style:italic;color:#28496f;font-variant-numeric:tabular-nums">02</span>
+        <h3 style="margin:0;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-weight:500;font-size:clamp(1.65rem,2.5vw,2.5rem);line-height:1.12">Unternehmen</h3>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:#5c6570;text-wrap:pretty">Firmenjubiläen, Mitarbeitergeschenke, Kundengeschenke. Ein Gegenstand, der bleibt, wenn die Rede vorbei ist.</p>
+        <a href="modelle.html#geschichte-unternehmen" style="margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:10px;min-height:44px;color:#1f3a5f;text-decoration:none;font-weight:600;font-size:15px;border-bottom:1px solid rgba(31,58,95,0.4);transition:gap 200ms,border-color 200ms" data-hv="2">Beispiel ansehen<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></a>
+      </li>
+      <li style="border-top:1px solid #1c1e22;padding:28px 0 40px;display:flex;flex-direction:column;gap:16px">
+        <span style="font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-size:20px;font-style:italic;color:#28496f;font-variant-numeric:tabular-nums">03</span>
+        <h3 style="margin:0;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-weight:500;font-size:clamp(1.65rem,2.5vw,2.5rem);line-height:1.12">Privat</h3>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:#5c6570;text-wrap:pretty">Hochzeit, Geburt, ein persönlicher Meilenstein. Initialen und ein Tag, festgehalten für einen Menschen.</p>
+        <a href="modelle.html#geschichte-privat" style="margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:10px;min-height:44px;color:#1f3a5f;text-decoration:none;font-weight:600;font-size:15px;border-bottom:1px solid rgba(31,58,95,0.4);transition:gap 200ms,border-color 200ms" data-hv="2">Beispiel ansehen<svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"></path></svg></a>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="atelier" data-dark="" aria-labelledby="at-h" style="scroll-margin-top:var(--hd);background:#101820;color:#f3f0e8">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,9vw,136px) clamp(20px,4.5vw,64px);display:flex;flex-wrap:wrap;align-items:center;gap:clamp(40px,6vw,104px)">
+    <figure style="flex:7 1 480px;min-width:0;margin:0;display:flex;flex-direction:column;gap:12px">
+      <div class="ph-frame" style="position:relative;aspect-ratio:5/4;background:#14283f;overflow:hidden">
+        <img src="assets/img/atelier-5x4.webp" srcset="assets/img/atelier-5x4-720.webp 720w, assets/img/atelier-5x4.webp 1440w" sizes="(min-width: 1000px) 56vw, 100vw" alt="Hände mit Pinzette an einem offenen Uhrwerk im gedämpften Werkbanklicht" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+        <span style="position:absolute;top:14px;left:14px;pointer-events:none;padding:5px 9px;background:rgba(16,24,32,0.86);color:#f3f0e8;font-size:12px;font-weight:600;letter-spacing:0.06em">Beispielbild</span>
+      </div>
+      <figcaption style="font-size:13px;line-height:1.5;color:#c5d4e4">Beispielbild – illustrative Atelierszene, keine Aufnahme des Kundenbetriebs.</figcaption>
+    </figure>
+    <div style="flex:5 1 340px;min-width:0;max-width:520px;display:flex;flex-direction:column;gap:24px">
+      <p style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#c5d4e4">Atelier</p>
+      <h2 id="at-h" style="margin:0;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-weight:500;font-size:clamp(2.25rem,4.6vw,4.4rem);line-height:1.06;text-wrap:balance">Was aus der Nähe zählt</h2>
+      <p style="margin:0;font-size:18px;line-height:1.6;color:#e6edf3;text-wrap:pretty">Eine personalisierte Uhr beginnt mit einem Zeichen. Entscheidend ist, wie es mit dem Zifferblatt, der Gravur und der Form zusammenspielt.</p>
+      <p style="margin:8px 0;padding:24px 0;border-top:1px solid rgba(197,212,228,0.24);border-bottom:1px solid rgba(197,212,228,0.24);font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-style:italic;font-weight:500;font-size:clamp(1.75rem,2.8vw,2.6rem);line-height:1.15;color:#c5d4e4">Ein kleines Detail. Eine grosse Bedeutung.</p>
+      <p style="margin:0;font-size:18px;line-height:1.6;color:#e6edf3;text-wrap:pretty">Im Entwurf zählt der Abstand ebenso wie die Strichstärke. Wie wirkt ein Wappen auf dunklem Blau? Wie liest sich eine Gravur im flachen Licht? Aus solchen Fragen entsteht eine Uhr, die zu ihrem Anlass passt.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="aw-footer" data-dark="" style="background:#101820;color:#f3f0e8">
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,7vw,96px) clamp(20px,4.5vw,64px) calc(32px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:48px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:40px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <img src="assets/logo/atelier-w-logo-white.svg" alt="Atelier AW" width="104" height="70" style="display:block;height:70px;width:auto;align-self:flex-start">
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#c5d4e4;max-width:24em">Personalisierte Uhren für Vereine, Unternehmen und private Anlässe. Gestaltet auf Anfrage, ausgewählte Uhren sofort verfügbar.</p>
+      </div>
+      <nav aria-label="Fusszeile">
+        <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#c5d4e4">Navigation</p>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px">
+          <li><a href="index.html" style="display:inline-block;padding:6px 0;color:#f3f0e8;text-decoration:none;font-size:15px" data-hv="11">Start</a></li>
+          <li><a href="modelle.html" style="display:inline-block;padding:6px 0;color:#f3f0e8;text-decoration:none;font-size:15px" data-hv="11">Modelle</a></li>
+          <li><a href="sofort-verfuegbar.html" style="display:inline-block;padding:6px 0;color:#f3f0e8;text-decoration:none;font-size:15px" data-hv="11">Sofort verfügbar</a></li>
+          <li><a href="projekte.html" style="display:inline-block;padding:6px 0;color:#f3f0e8;text-decoration:none;font-size:15px" data-hv="11">Projekte</a></li>
+          <li><a href="zubehoer.html" style="display:inline-block;padding:6px 0;color:#f3f0e8;text-decoration:none;font-size:15px" data-hv="11">Zubehör</a></li>
+          <li><a href="ablauf.html" style="display:inline-block;padding:6px 0;color:#f3f0e8;text-decoration:none;font-size:15px" data-hv="11">Ablauf</a></li>
+          <li><a href="kontakt.html" style="display:inline-block;padding:6px 0;color:#f3f0e8;text-decoration:none;font-size:15px" data-hv="11">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#c5d4e4">Kontakt</p>
+        <address style="font-style:normal;display:flex;flex-direction:column;gap:6px;font-size:15px;line-height:1.5;overflow-wrap:anywhere">
+          <span>[[E-MAIL]]</span><span>[[TELEFON]]</span><span>[[STRASSE UND HAUSNUMMER]]</span><span>[[PLZ UND ORT]]</span><span>Schweiz</span>
+        </address>
+      </div>
+      <div>
+        <p style="margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#c5d4e4">Rechtliches</p>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px">
+          <li><a href="impressum.html" style="display:inline-block;padding:6px 0;color:#f3f0e8;font-size:15px" data-hv="11">Impressum</a></li>
+          <li><a href="datenschutz.html" style="display:inline-block;padding:6px 0;color:#f3f0e8;font-size:15px" data-hv="11">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(197,212,228,0.2);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;line-height:1.5;color:#c5d4e4">
+      <span>© <span data-year>2026</span> Atelier AW</span>
+      <span style="max-width:52em">Website-Demonstration. Kontakt- und Firmendaten sind Platzhalter. Bilder: Beispielbilder, keine Kundenaufträge.</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/intro.js" defer></script>
+<script src="assets/js/hero-video.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>

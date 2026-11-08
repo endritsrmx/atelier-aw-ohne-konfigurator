@@ -1,0 +1,46 @@
+/* Atelier AW – mehrseitige Struktur: aktive Navigation, Seitenkopf, Teaser, CTA */
+.hd-links a[aria-current="page"]{color:#ffffff}
+.hd-links a[aria-current="page"] .nav-line{transform:scaleX(1)}
+#aw-menu a[aria-current="page"]{color:#c5d4e4!important;font-style:italic}
+.hd-cta[aria-current="page"]{box-shadow:0 0 0 1px rgba(255,255,255,.6)}
+/* Seitenkopf */
+.ph{position:relative;overflow:hidden;background:radial-gradient(120% 140% at 85% 0%,#2c587f 0%,#1a3354 45%,#101820 100%);color:#f3f0e8;scroll-margin-top:var(--hd);outline:none}
+.ph::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.025) 0 1px,transparent 1px 7px);pointer-events:none}
+.ph-in{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:clamp(48px,7vw,104px) clamp(20px,4.5vw,64px) clamp(44px,6vw,88px);display:flex;flex-direction:column;gap:18px}
+.ph-crumb{display:flex;gap:10px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#c5d4e4}
+.ph-crumb a{color:#c5d4e4;text-decoration:none;border-bottom:1px solid rgba(197,212,228,.35)}
+.ph-crumb span[aria-hidden]{opacity:.5}
+.ph-h{margin:0;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-weight:500;font-size:clamp(2.6rem,6vw,5.4rem);line-height:1.02;letter-spacing:-.01em;text-wrap:balance;max-width:16em}
+.ph-lead{margin:0;max-width:36em;font-size:clamp(17px,1.5vw,20px);line-height:1.55;color:#e6edf3;text-wrap:pretty}
+.ph-line{position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(197,212,228,.6),transparent);transform-origin:left;animation:ph-line 1.4s cubic-bezier(.22,1,.36,1) .2s both}
+.ph-in>*{animation:ph-up .8s cubic-bezier(.22,1,.36,1) both}
+.ph-in>*:nth-child(2){animation-delay:.08s}.ph-in>*:nth-child(3){animation-delay:.16s}
+@keyframes ph-up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes ph-line{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.ph-in>*,.ph-line{animation:none}}
+/* Teaser auf der Startseite */
+.tz-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:clamp(20px,2.5vw,32px)}
+.tz-a{display:flex;flex-direction:column;height:100%;background:#ffffff;color:#1c1e22;text-decoration:none;border:1px solid rgba(31,58,95,.1);transition:border-color 300ms,transform 300ms cubic-bezier(.22,1,.36,1),box-shadow 300ms}
+.tz-ph{position:relative;aspect-ratio:4/3;background:#14283f;overflow:hidden;border-radius:0!important;clip-path:none!important}
+.tz-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform 900ms cubic-bezier(.22,1,.36,1)}
+.tz-b{padding:22px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tz-t{margin:0;font-family:'Cormorant Garamond',Palatino,Georgia,serif;font-weight:500;font-size:clamp(1.7rem,2.2vw,2.1rem);line-height:1.05}
+.tz-d{margin:0;font-size:15px;line-height:1.55;color:#5c6570}
+.tz-l{margin-top:auto;padding-top:12px;display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;color:#1f3a5f}
+.tz-l svg{transition:transform 220ms cubic-bezier(.22,1,.36,1)}
+@media (hover:hover) and (pointer:fine){
+  .tz-a:hover{border-color:rgba(31,58,95,.35);transform:translateY(-3px);box-shadow:0 14px 30px rgba(16,24,32,.08)}
+  .tz-a:hover .tz-ph img{transform:scale(1.04)}
+  .tz-a:hover .tz-l svg{transform:translateX(4px)}
+  .cta-ghost:hover{background:rgba(243,240,232,.08)!important}
+}
+.tz-a:focus-visible{outline:2px solid #1f3a5f;outline-offset:3px}
+/* CTA-Band */
+.cta-in{flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;padding-top:clamp(48px,6vw,88px);padding-bottom:clamp(48px,6vw,88px)}
+.cta-btns{display:flex;flex-wrap:wrap;gap:14px}
+.cta-ghost{background:transparent;border:1px solid rgba(197,212,228,.55)}
+.ph + section > div:first-child{padding-top:clamp(40px,5vw,72px)!important}
+.ph ~ #anfrage > div > div:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Variante ohne Konfigurator: fünf Kacheln, 3 + 2 */
+@media (min-width:1000px){.tz-grid-5{grid-template-columns:repeat(6,minmax(0,1fr))}.tz-grid-5>li{grid-column:span 2}.tz-grid-5>li:nth-child(n+4){grid-column:span 3}.tz-grid-5>li:nth-child(n+4) .tz-ph{aspect-ratio:16/9}}
